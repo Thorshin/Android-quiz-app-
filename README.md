@@ -45,5 +45,5 @@ An Android-based history quiz application featuring:
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/Thorshin/Android-quiz-app
+   git clone https://github.com/Thorshin/Android-quiz-app-
    cd Android-quiz-app
