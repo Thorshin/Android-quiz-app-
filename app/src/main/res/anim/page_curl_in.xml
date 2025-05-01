@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/decelerate_quad">
+    <!-- Slide in from right -->
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0"
+        android:duration="500"/>
+    <!-- Rotate a bit from a right‑edge pivot -->
+    <rotate
+        android:fromDegrees="30"
+        android:toDegrees="0"
+        android:pivotX="0%p"
+        android:pivotY="50%p"
+        android:duration="500"/>
+</set>

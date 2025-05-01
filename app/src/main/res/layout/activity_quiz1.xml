@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz1_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz1">
+
+    <!-- Full-screen animated GIF background -->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ancient_egypt"
+        android:scaleType="centerCrop" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 1"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ancient_font"
+                android:textColor="@color/accent_brown"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="4"
+                android:layout_marginBottom="60dp"/>
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="350dp"
+                android:src="@drawable/q1"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Transparent panel around question text & choices -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCFFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quelle célèbre pierre a permis de déchiffrer les hiéroglyphes?"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ancient_font"
+                    android:textColor="@color/accent_brown"
+                    android:layout_marginBottom="12dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg">
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La pierre philosophale"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rosetta Stone"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="La pierre de l'éloquence"
+                        android:textSize="20sp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Next button -->
+            <Button
+                style="@style/HistoryButton"
+                android:id="@+id/bNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suivant"
+                android:layout_marginBottom="24dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

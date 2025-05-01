@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Parchment background -->
+    <color name="parchment_light">#D7CCC8</color>
+    <color name="parchment_dark">#A1887F</color>
+    <!-- Accent for buttons/inputs -->
+    <color name="accent_brown">#5D4037</color>
+    <color name="parchment_translucent">#CCFAF3E0</color>
+    <color name="teal_700">#FF018786</color>
+    <!-- Corrected black color to 6-digit hex -->
+    <color name="black">#000000</color>
+</resources>

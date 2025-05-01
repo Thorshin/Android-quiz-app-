@@ -1,0 +1,8 @@
+<resources>
+    <string name="email_hint">E‑mail</string>
+    <string name="password_hint">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="register">S\’inscrire</string>
+    <string name="logo_desc">Logo de l\'application</string>
+    <string name="app_name">history quiz</string>
+</resources>

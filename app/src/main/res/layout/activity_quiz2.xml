@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quiz2_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz2">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rome"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 2"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/ancient_font"
+                android:textColor="@color/accent_brown"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="4"
+                android:layout_marginBottom="60dp"/>
+
+            <ImageView
+                android:layout_width="450dp"
+                android:layout_height="300dp"
+                android:src="@drawable/q2"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CCFFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A combien est estimée la population de la Ville de Rome au Ier siècle après J.-C.?"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/ancient_font"
+                    android:textColor="@color/accent_brown"
+                    android:layout_marginBottom="12dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg">
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40 000 personnes"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="150 000 personnes"
+                        android:textSize="20sp"/>
+
+                    <RadioButton
+                        style="@style/HistoryRadioButton"
+                        android:id="@+id/rb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500 000 personnes"
+                        android:textSize="20sp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Next button -->
+            <Button
+                style="@style/HistoryButton"
+                android:id="@+id/bNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Suivant"
+                android:textSize="20sp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

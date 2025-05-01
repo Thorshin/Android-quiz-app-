@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/decelerate_quad">
+    <!-- Slide left as it “turns” away -->
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="-50%p"
+        android:duration="500"/>
+    <!-- Tilt out around the left edge -->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="-30"
+        android:pivotX="100%p"
+        android:pivotY="50%p"
+        android:duration="500"/>
+    <!-- Slight fade so the next page peek shows underneath -->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.8"
+        android:duration="500"/>
+</set>

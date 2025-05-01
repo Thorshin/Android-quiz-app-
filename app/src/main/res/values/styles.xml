@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HistoryEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:background">@drawable/edittext_history_bg</item>
+        <item name="android:fontFamily">@font/ancient_font</item>
+        <item name="android:textColor">@color/accent_brown</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="HistoryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:backgroundTint">@color/accent_brown</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/ancient_font</item>
+    </style>
+
+    <style name="HistoryRadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/ancient_font</item>
+        <item name="android:textColor">@color/accent_brown</item>
+        <item name="android:buttonTint">@color/accent_brown</item>
+    </style>
+
+    <style name="HistoryQuestionBlock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/question_block_bg</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="ScoreBlock">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/score_container_bg</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+</resources>
